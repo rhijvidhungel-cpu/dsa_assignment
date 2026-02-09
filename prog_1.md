@@ -20,12 +20,13 @@ int top = -1;
 
 * push(char ch): Push function is used to insert an item into the stack.
 * pop(): Pop function is used to remove an item from a stack.
-* isMatching(char open, char close): This function checks if the opening parenthesis matches with the closing parenthesis.
-* isBalanced(char exp[]): This function checks if the opening parenthesis has its matching closing parenthesis and returns
+* isMatching: This function checks if the opening parenthesis matches with the closing parenthesis.
+* isBalanced: This function checks if the opening parenthesis has its matching closing parenthesis and returns
   whether the mathematical expression is balanced or not.
 * main(): The main function performs the following operations:<br>
 - Declares a character array to store the expression.<br>
 - Accepts the expression from the user.<br>
 - Calls the isBalanced() function.<br>
 - Displays whether the expression is balanced or not.<br>
+
 
