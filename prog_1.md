@@ -17,7 +17,6 @@ int top = -1;
 * top = -1 initializes the top of stack as empty.
 
 **Functions:**
-
 * push(char ch): Push function is used to insert an item into the stack.
 * pop(): Pop function is used to remove an item from a stack.
 * isMatching: This function checks if the opening parenthesis matches with the closing parenthesis.
@@ -28,5 +27,13 @@ int top = -1;
 - Accepts the expression from the user.<br>
 - Calls the isBalanced() function.<br>
 - Displays whether the expression is balanced or not.<br>
+
+**Sample Output**
+Enter expression: {2+3+4*5)}
+Expression is NOT BALANCED
+
+Enter expression: [{2+3+4*5}+6]
+Expression is BALANCED
+
 
 
