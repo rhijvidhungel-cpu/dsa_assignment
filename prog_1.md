@@ -9,6 +9,7 @@ if it has a balanced number of parentheses `'()','{}','[]'`.
 #define size 50
 char STK[size];
 int top = -1;
+```
 
 **Explanation:**
 * #define size 50 it initializes the size of the array.
@@ -27,3 +28,4 @@ int top = -1;
 - Accepts the expression from the user.<br>
 - Calls the isBalanced() function.<br>
 - Displays whether the expression is balanced or not.<br>
+
