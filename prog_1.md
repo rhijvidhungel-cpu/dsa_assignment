@@ -1,41 +1,26 @@
-#include <stdio.h>
+Checking balance number of parenthesis
 
+Objective:
+The objective of this program is to analyze mathematical expression and check
+if it has balanced number of parenthesis '()','{}','[]' or not.
+
+Defining Data-Structures:
 #define size 50
 char STK[size];
 int top = -1;
 
-void push(char ch) {
-    if (top < size - 1) STK[++top] = ch;
-}
+Explanation:
+#define size 50 it initializes the size of the array
+STK[size] sets a character array of defined size
+top = -1 initializes the top of stack to be -1
 
-char pop() {
-    if (top >= 0) return STK[top--];
-    return '\0';
-}
-
-int isMatching(char open, char close) {
-    if (open=='(' && close==')') return 1;
-    if (open=='{' && close=='}') return 1;
-    if (open=='[' && close==']') return 1;
-    return 0;
-}
-
-int isBalanced(char exp[]) {
-    for(int i=0; exp[i]!='\0'; i++) {
-        if(exp[i]=='(' || exp[i]=='{' || exp[i]=='[') push(exp[i]);
-        else if(exp[i]==')' || exp[i]=='}' || exp[i]==']') {
-            if(top==-1 || !isMatching(pop(), exp[i])) return 0;
-        }
-    }
-    return top==-1;
-}
-
-int main() {
-    char exp[100];
-    printf("Enter expression: ");
-    fgets(exp, sizeof(exp), stdin);
-
-    if(isBalanced(exp)) printf("Expression is BALANCED\n");
-    else printf("Expression is NOT BALANCED\n");
-    return 0;
-}
+Functions:
+push(char ch): push function is used to insert an item into the stack.
+pop(): Pop function is used to remove an item from a stack.
+isMatching: This function checks if the opening parenthesis matches with the closing parenthesis.
+isBalanced: This function checks if the opening parenthesis has its matching closing parenthesis and returns if the mathematical expression is balanced or not.
+main(): The main function performs following operations:
+- Declares a character array to store the expression
+- Accepts the expression from the user
+- Calls the isBalanced() function
+- Displays whether the expression is balanced or not
