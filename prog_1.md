@@ -28,12 +28,13 @@ int top = -1;
 - Calls the isBalanced() function.<br>
 - Displays whether the expression is balanced or not.<br>
 
-**Sample Output**
-Enter expression: {2+3+4*5)}
-Expression is NOT BALANCED
+**Sample Output:**
+*Enter expression: {2+3+4*5)}
+-Expression is NOT BALANCED
 
-Enter expression: [{2+3+4*5}+6]
-Expression is BALANCED
+*Enter expression: [{2+3+4*5}+6]
+-Expression is BALANCED
+
 
 
 
